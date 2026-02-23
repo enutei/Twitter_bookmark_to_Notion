@@ -1,3 +1,5 @@
+GithubCopilotの学割で気づいたらClaudeCode（？）が使えるようになってたのでそれで作りました。
+バイブコーディング１００％なので変な部分あったらすみません。
 # Twitter Bookmarks to Notion
 
 Twitter(X)のツイートをフォルダ分けしてNotionデータベースに保存するChrome拡張機能です。
