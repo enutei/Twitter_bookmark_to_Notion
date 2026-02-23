@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>Twitter Bookmarks to Notion - 設定</title>
+  <link rel="stylesheet" href="options.css" />
+</head>
+<body>
+  <div class="options-container">
+    <h1>Twitter Bookmarks to Notion</h1>
+    <p class="subtitle">Notionインテグレーションの設定を行ってください。</p>
+
+    <div class="form-group">
+      <label for="notionToken">Notion Integration Token</label>
+      <input type="password" id="notionToken"
+             placeholder="ntn_xxxxxxxxxxxxxxxxxxxx" />
+      <p class="hint">
+        <a href="https://www.notion.so/my-integrations" target="_blank">
+          notion.so/my-integrations
+        </a>
+        でインテグレーションを作成し、Internal Integration Secret を貼り付けてください。
+      </p>
+    </div>
+
+    <div class="form-group">
+      <label for="notionDatabaseId">Notion Database ID</label>
+      <input type="text" id="notionDatabaseId"
+             placeholder="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" />
+      <p class="hint">
+        Notionでデータベースをフルページとして開き、URLの中にある32文字の16進数文字列がDatabase IDです。
+      </p>
+    </div>
+
+    <button id="saveBtn">設定を保存</button>
+    <div id="status" class="status"></div>
+
+    <div class="setup-guide">
+      <h2>セットアップ手順</h2>
+      <ol>
+        <li><a href="https://www.notion.so/my-integrations" target="_blank">Notion Integrations</a> で新しいインテグレーションを作成します。</li>
+        <li>「Internal Integration Secret」をコピーして上のフィールドに貼り付けます。</li>
+        <li>Notionでブックマーク用のデータベースを作成します（既存のものでもOK）。</li>
+        <li>
+          インテグレーションにデータベースへのアクセス権を付与します。
+          <ul>
+            <li>推奨: インテグレーション詳細の「コンテンツへのアクセス」から、対象のデータベース（または親ページ）を追加して保存</li>
+            <li>共有ダイアログにインテグレーション候補が出る場合: データベース右上「共有」からインテグレーション名を検索して招待</li>
+          </ul>
+        </li>
+        <li>URLからDatabase IDをコピーして上のフィールドに貼り付けます。</li>
+      </ol>
+    </div>
+  </div>
+  <script src="options.js"></script>
+</body>
+</html>
