@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Environment / Secrets
+.env
+.env.local
+.env.*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Chrome extension packaging
+*.pem
+*.crx
+*.zip
+
+# Logs
+*.log
+npm-debug.log*
+
+# Temporary files
+tmp*
+*.tmp
